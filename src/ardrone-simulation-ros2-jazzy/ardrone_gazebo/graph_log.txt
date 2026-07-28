@@ -1,0 +1,852 @@
+=== ROS 2 Active Topics and Connections ===
+
+Topic: /apriltag/detections
+  Type: apriltag_msgs/msg/AprilTagDetectionArray
+  Publishers: 0
+  Subscribers: 1
+
+Topic: /ardrone/imu
+  Type: sensor_msgs/msg/Imu
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /ardrone/land
+  Type: std_msgs/msg/Empty
+  Publishers: 0
+  Subscribers: 2
+
+Topic: /ardrone/navdata
+  Type: ardrone_autonomy/msg/Navdata
+  Publishers: 2
+  Subscribers: 0
+
+Topic: /ardrone/posctrl
+  Type: std_msgs/msg/Bool
+  Publishers: 0
+  Subscribers: 2
+
+Topic: /ardrone/reset
+  Type: std_msgs/msg/Empty
+  Publishers: 0
+  Subscribers: 2
+
+Topic: /ardrone/takeoff
+  Type: std_msgs/msg/Empty
+  Publishers: 0
+  Subscribers: 2
+
+Topic: /ardrone/vel_mode
+  Type: std_msgs/msg/Bool
+  Publishers: 0
+  Subscribers: 2
+
+Topic: /aruco/detections
+  Type: aruco_msgs/msg/MarkerArray
+  Publishers: 0
+  Subscribers: 1
+
+Topic: /aruco_opencv/detections
+  Type: aruco_opencv_msgs/msg/ArucoDetection
+  Publishers: 0
+  Subscribers: 1
+
+Topic: /assisted_teleop/_action/feedback
+  Type: nav2_msgs/action/AssistedTeleop_FeedbackMessage
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /assisted_teleop/_action/status
+  Type: action_msgs/msg/GoalStatusArray
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /backup/_action/feedback
+  Type: nav2_msgs/action/BackUp_FeedbackMessage
+  Publishers: 1
+  Subscribers: 2
+
+Topic: /backup/_action/status
+  Type: action_msgs/msg/GoalStatusArray
+  Publishers: 1
+  Subscribers: 2
+
+Topic: /behavior_server/transition_event
+  Type: lifecycle_msgs/msg/TransitionEvent
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /behavior_tree_log
+  Type: nav2_msgs/msg/BehaviorTreeLog
+  Publishers: 2
+  Subscribers: 0
+
+Topic: /bond
+  Type: bond/msg/Status
+  Publishers: 20
+  Subscribers: 20
+
+Topic: /bt_navigator/transition_event
+  Type: lifecycle_msgs/msg/TransitionEvent
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /camera/camera_info
+  Type: sensor_msgs/msg/CameraInfo
+  Publishers: 1
+  Subscribers: 1
+
+Topic: /camera/depth_image
+  Type: sensor_msgs/msg/Image
+  Publishers: 1
+  Subscribers: 1
+
+Topic: /camera/image
+  Type: sensor_msgs/msg/Image
+  Publishers: 1
+  Subscribers: 1
+
+Topic: /camera/points
+  Type: sensor_msgs/msg/PointCloud2
+  Publishers: 1
+  Subscribers: 2
+
+Topic: /clicked_point
+  Type: geometry_msgs/msg/PointStamped
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /clock
+  Type: rosgraph_msgs/msg/Clock
+  Publishers: 1
+  Subscribers: 24
+
+Topic: /cloud_ground
+  Type: sensor_msgs/msg/PointCloud2
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /cloud_map
+  Type: sensor_msgs/msg/PointCloud2
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /cloud_obstacles
+  Type: sensor_msgs/msg/PointCloud2
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /cmd_vel
+  Type: geometry_msgs/msg/Twist
+  Publishers: 2
+  Subscribers: 2
+
+Topic: /cmd_vel_nav
+  Type: geometry_msgs/msg/Twist
+  Publishers: 6
+  Subscribers: 1
+
+Topic: /cmd_vel_smoothed
+  Type: geometry_msgs/msg/Twist
+  Publishers: 1
+  Subscribers: 1
+
+Topic: /cmd_vel_teleop
+  Type: geometry_msgs/msg/Twist
+  Publishers: 0
+  Subscribers: 1
+
+Topic: /collision_monitor/collision_points_marker
+  Type: visualization_msgs/msg/MarkerArray
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /collision_monitor/transition_event
+  Type: lifecycle_msgs/msg/TransitionEvent
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /collision_monitor_state
+  Type: nav2_msgs/msg/CollisionMonitorState
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /compute_and_track_route/_action/feedback
+  Type: nav2_msgs/action/ComputeAndTrackRoute_FeedbackMessage
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /compute_and_track_route/_action/status
+  Type: action_msgs/msg/GoalStatusArray
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /compute_path_through_poses/_action/feedback
+  Type: nav2_msgs/action/ComputePathThroughPoses_FeedbackMessage
+  Publishers: 1
+  Subscribers: 1
+
+Topic: /compute_path_through_poses/_action/status
+  Type: action_msgs/msg/GoalStatusArray
+  Publishers: 1
+  Subscribers: 1
+
+Topic: /compute_path_to_pose/_action/feedback
+  Type: nav2_msgs/action/ComputePathToPose_FeedbackMessage
+  Publishers: 1
+  Subscribers: 1
+
+Topic: /compute_path_to_pose/_action/status
+  Type: action_msgs/msg/GoalStatusArray
+  Publishers: 1
+  Subscribers: 1
+
+Topic: /compute_route/_action/feedback
+  Type: nav2_msgs/action/ComputeRoute_FeedbackMessage
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /compute_route/_action/status
+  Type: action_msgs/msg/GoalStatusArray
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /controller_selector
+  Type: std_msgs/msg/String
+  Publishers: 0
+  Subscribers: 2
+
+Topic: /controller_server/transition_event
+  Type: lifecycle_msgs/msg/TransitionEvent
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /curvature_lookahead_point
+  Type: geometry_msgs/msg/PointStamped
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /detected_dock_pose
+  Type: geometry_msgs/msg/PoseStamped
+  Publishers: 0
+  Subscribers: 1
+
+Topic: /diagnostics
+  Type: diagnostic_msgs/msg/DiagnosticArray
+  Publishers: 2
+  Subscribers: 0
+
+Topic: /dock_pose
+  Type: geometry_msgs/msg/PoseStamped
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /dock_robot/_action/feedback
+  Type: nav2_msgs/action/DockRobot_FeedbackMessage
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /dock_robot/_action/status
+  Type: action_msgs/msg/GoalStatusArray
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /docking_server/transition_event
+  Type: lifecycle_msgs/msg/TransitionEvent
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /docking_trajectory
+  Type: nav_msgs/msg/Path
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /drive_on_heading/_action/feedback
+  Type: nav2_msgs/action/DriveOnHeading_FeedbackMessage
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /drive_on_heading/_action/status
+  Type: action_msgs/msg/GoalStatusArray
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /explore/frontiers
+  Type: visualization_msgs/msg/MarkerArray
+  Publishers: 1
+  Subscribers: 1
+
+Topic: /explore/optimized_map
+  Type: nav_msgs/msg/OccupancyGrid
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /explore/selected_frontier
+  Type: geometry_msgs/msg/PoseStamped
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /filtered_dock_pose
+  Type: geometry_msgs/msg/PoseStamped
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /follow_gps_waypoints/_action/feedback
+  Type: nav2_msgs/action/FollowGPSWaypoints_FeedbackMessage
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /follow_gps_waypoints/_action/status
+  Type: action_msgs/msg/GoalStatusArray
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /follow_path/_action/feedback
+  Type: nav2_msgs/action/FollowPath_FeedbackMessage
+  Publishers: 1
+  Subscribers: 2
+
+Topic: /follow_path/_action/status
+  Type: action_msgs/msg/GoalStatusArray
+  Publishers: 1
+  Subscribers: 2
+
+Topic: /follow_waypoints/_action/feedback
+  Type: nav2_msgs/action/FollowWaypoints_FeedbackMessage
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /follow_waypoints/_action/status
+  Type: action_msgs/msg/GoalStatusArray
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /global_costmap/costmap
+  Type: nav_msgs/msg/OccupancyGrid
+  Publishers: 1
+  Subscribers: 2
+
+Topic: /global_costmap/costmap_raw
+  Type: nav2_msgs/msg/Costmap
+  Publishers: 1
+  Subscribers: 2
+
+Topic: /global_costmap/costmap_raw_updates
+  Type: nav2_msgs/msg/CostmapUpdate
+  Publishers: 1
+  Subscribers: 2
+
+Topic: /global_costmap/costmap_updates
+  Type: map_msgs/msg/OccupancyGridUpdate
+  Publishers: 1
+  Subscribers: 1
+
+Topic: /global_costmap/footprint
+  Type: geometry_msgs/msg/Polygon
+  Publishers: 0
+  Subscribers: 1
+
+Topic: /global_costmap/global_costmap/transition_event
+  Type: lifecycle_msgs/msg/TransitionEvent
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /global_costmap/obstacle_layer
+  Type: nav_msgs/msg/OccupancyGrid
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /global_costmap/obstacle_layer_raw
+  Type: nav2_msgs/msg/Costmap
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /global_costmap/obstacle_layer_raw_updates
+  Type: nav2_msgs/msg/CostmapUpdate
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /global_costmap/obstacle_layer_updates
+  Type: map_msgs/msg/OccupancyGridUpdate
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /global_costmap/published_footprint
+  Type: geometry_msgs/msg/PolygonStamped
+  Publishers: 1
+  Subscribers: 1
+
+Topic: /global_costmap/static_layer
+  Type: nav_msgs/msg/OccupancyGrid
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /global_costmap/static_layer_raw
+  Type: nav2_msgs/msg/Costmap
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /global_costmap/static_layer_raw_updates
+  Type: nav2_msgs/msg/CostmapUpdate
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /global_costmap/static_layer_updates
+  Type: map_msgs/msg/OccupancyGridUpdate
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /global_path
+  Type: nav_msgs/msg/Path
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /global_path_nodes
+  Type: rtabmap_msgs/msg/Path
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /global_pose
+  Type: geometry_msgs/msg/PoseWithCovarianceStamped
+  Publishers: 0
+  Subscribers: 1
+
+Topic: /goal
+  Type: geometry_msgs/msg/PoseStamped
+  Publishers: 0
+  Subscribers: 1
+
+Topic: /goal_node
+  Type: rtabmap_msgs/msg/Goal
+  Publishers: 0
+  Subscribers: 1
+
+Topic: /goal_out
+  Type: geometry_msgs/msg/PoseStamped
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /goal_pose
+  Type: geometry_msgs/msg/PoseStamped
+  Publishers: 1
+  Subscribers: 1
+
+Topic: /goal_reached
+  Type: std_msgs/msg/Bool
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /gps/fix
+  Type: sensor_msgs/msg/NavSatFix
+  Publishers: 0
+  Subscribers: 1
+
+Topic: /grid_prob_map
+  Type: nav_msgs/msg/OccupancyGrid
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /imu
+  Type: sensor_msgs/msg/Imu
+  Publishers: 0
+  Subscribers: 1
+
+Topic: /info
+  Type: rtabmap_msgs/msg/Info
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /initialpose
+  Type: geometry_msgs/msg/PoseWithCovarianceStamped
+  Publishers: 1
+  Subscribers: 1
+
+Topic: /is_rotating_to_heading
+  Type: std_msgs/msg/Bool
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /joint_states
+  Type: sensor_msgs/msg/JointState
+  Publishers: 0
+  Subscribers: 1
+
+Topic: /labels
+  Type: visualization_msgs/msg/MarkerArray
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /landmark_detection
+  Type: rtabmap_msgs/msg/LandmarkDetection
+  Publishers: 0
+  Subscribers: 1
+
+Topic: /landmark_detections
+  Type: rtabmap_msgs/msg/LandmarkDetections
+  Publishers: 0
+  Subscribers: 1
+
+Topic: /landmarks
+  Type: geometry_msgs/msg/PoseArray
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /local_costmap/costmap
+  Type: nav_msgs/msg/OccupancyGrid
+  Publishers: 1
+  Subscribers: 2
+
+Topic: /local_costmap/costmap_raw
+  Type: nav2_msgs/msg/Costmap
+  Publishers: 1
+  Subscribers: 2
+
+Topic: /local_costmap/costmap_raw_updates
+  Type: nav2_msgs/msg/CostmapUpdate
+  Publishers: 1
+  Subscribers: 2
+
+Topic: /local_costmap/costmap_updates
+  Type: map_msgs/msg/OccupancyGridUpdate
+  Publishers: 1
+  Subscribers: 1
+
+Topic: /local_costmap/footprint
+  Type: geometry_msgs/msg/Polygon
+  Publishers: 0
+  Subscribers: 1
+
+Topic: /local_costmap/local_costmap/transition_event
+  Type: lifecycle_msgs/msg/TransitionEvent
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /local_costmap/obstacle_layer
+  Type: nav_msgs/msg/OccupancyGrid
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /local_costmap/obstacle_layer_raw
+  Type: nav2_msgs/msg/Costmap
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /local_costmap/obstacle_layer_raw_updates
+  Type: nav2_msgs/msg/CostmapUpdate
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /local_costmap/obstacle_layer_updates
+  Type: map_msgs/msg/OccupancyGridUpdate
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /local_costmap/published_footprint
+  Type: geometry_msgs/msg/PolygonStamped
+  Publishers: 1
+  Subscribers: 3
+
+Topic: /local_grid_empty
+  Type: sensor_msgs/msg/PointCloud2
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /local_grid_ground
+  Type: sensor_msgs/msg/PointCloud2
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /local_grid_obstacle
+  Type: sensor_msgs/msg/PointCloud2
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /local_path
+  Type: nav_msgs/msg/Path
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /local_path_nodes
+  Type: rtabmap_msgs/msg/Path
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /local_plan
+  Type: nav_msgs/msg/Path
+  Publishers: 0
+  Subscribers: 1
+
+Topic: /localization_pose
+  Type: geometry_msgs/msg/PoseWithCovarianceStamped
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /lookahead_collision_arc
+  Type: nav_msgs/msg/Path
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /lookahead_point
+  Type: geometry_msgs/msg/PointStamped
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /map
+  Type: nav_msgs/msg/OccupancyGrid
+  Publishers: 1
+  Subscribers: 4
+
+Topic: /mapData
+  Type: rtabmap_msgs/msg/MapData
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /mapGraph
+  Type: rtabmap_msgs/msg/MapGraph
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /mapOdomCache
+  Type: rtabmap_msgs/msg/MapGraph
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /mapPath
+  Type: nav_msgs/msg/Path
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /map_updates
+  Type: map_msgs/msg/OccupancyGridUpdate
+  Publishers: 0
+  Subscribers: 1
+
+Topic: /model/ardrone_gazebo/odometry
+  Type: nav_msgs/msg/Odometry
+  Publishers: 0
+  Subscribers: 1
+
+Topic: /navigate_through_poses/_action/feedback
+  Type: nav2_msgs/action/NavigateThroughPoses_FeedbackMessage
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /navigate_through_poses/_action/status
+  Type: action_msgs/msg/GoalStatusArray
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /navigate_to_pose/_action/feedback
+  Type: nav2_msgs/action/NavigateToPose_FeedbackMessage
+  Publishers: 1
+  Subscribers: 4
+
+Topic: /navigate_to_pose/_action/status
+  Type: action_msgs/msg/GoalStatusArray
+  Publishers: 1
+  Subscribers: 4
+
+Topic: /octomap_binary
+  Type: octomap_msgs/msg/Octomap
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /octomap_empty_space
+  Type: sensor_msgs/msg/PointCloud2
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /octomap_full
+  Type: octomap_msgs/msg/Octomap
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /octomap_global_frontier_space
+  Type: sensor_msgs/msg/PointCloud2
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /octomap_grid
+  Type: nav_msgs/msg/OccupancyGrid
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /octomap_ground
+  Type: sensor_msgs/msg/PointCloud2
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /octomap_obstacles
+  Type: sensor_msgs/msg/PointCloud2
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /octomap_occupied_space
+  Type: sensor_msgs/msg/PointCloud2
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /odom
+  Type: nav_msgs/msg/Odometry
+  Publishers: 1
+  Subscribers: 4
+
+Topic: /parameter_events
+  Type: rcl_interfaces/msg/ParameterEvent
+  Publishers: 24
+  Subscribers: 25
+
+Topic: /plan
+  Type: nav_msgs/msg/Path
+  Publishers: 2
+  Subscribers: 1
+
+Topic: /plan_smoothed
+  Type: nav_msgs/msg/Path
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /planner_selector
+  Type: std_msgs/msg/String
+  Publishers: 0
+  Subscribers: 2
+
+Topic: /planner_server/transition_event
+  Type: lifecycle_msgs/msg/TransitionEvent
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /preempt_teleop
+  Type: std_msgs/msg/Empty
+  Publishers: 0
+  Subscribers: 1
+
+Topic: /received_global_plan
+  Type: nav_msgs/msg/Path
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /robot_description
+  Type: std_msgs/msg/String
+  Publishers: 1
+  Subscribers: 1
+
+Topic: /rosout
+  Type: rcl_interfaces/msg/Log
+  Publishers: 28
+  Subscribers: 0
+
+Topic: /route_graph
+  Type: visualization_msgs/msg/MarkerArray
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /route_server/transition_event
+  Type: lifecycle_msgs/msg/TransitionEvent
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /rtabmap/cloud_map
+  Type: sensor_msgs/msg/PointCloud2
+  Publishers: 0
+  Subscribers: 1
+
+Topic: /rtabmap/republish_node_data
+  Type: std_msgs/msg/Int32MultiArray
+  Publishers: 0
+  Subscribers: 1
+
+Topic: /scan
+  Type: sensor_msgs/msg/LaserScan
+  Publishers: 0
+  Subscribers: 1
+
+Topic: /smooth_path/_action/feedback
+  Type: nav2_msgs/action/SmoothPath_FeedbackMessage
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /smooth_path/_action/status
+  Type: action_msgs/msg/GoalStatusArray
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /smoother_server/transition_event
+  Type: lifecycle_msgs/msg/TransitionEvent
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /speed_limit
+  Type: nav2_msgs/msg/SpeedLimit
+  Publishers: 1
+  Subscribers: 1
+
+Topic: /spin/_action/feedback
+  Type: nav2_msgs/action/Spin_FeedbackMessage
+  Publishers: 1
+  Subscribers: 2
+
+Topic: /spin/_action/status
+  Type: action_msgs/msg/GoalStatusArray
+  Publishers: 1
+  Subscribers: 2
+
+Topic: /staging_pose
+  Type: geometry_msgs/msg/PoseStamped
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /tag_detections
+  Type: apriltag_msgs/msg/AprilTagDetectionArray
+  Publishers: 0
+  Subscribers: 1
+
+Topic: /tf
+  Type: tf2_msgs/msg/TFMessage
+  Publishers: 3
+  Subscribers: 11
+
+Topic: /tf_static
+  Type: tf2_msgs/msg/TFMessage
+  Publishers: 1
+  Subscribers: 11
+
+Topic: /undock_robot/_action/feedback
+  Type: nav2_msgs/action/UndockRobot_FeedbackMessage
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /undock_robot/_action/status
+  Type: action_msgs/msg/GoalStatusArray
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /user_data_async
+  Type: rtabmap_msgs/msg/UserData
+  Publishers: 0
+  Subscribers: 1
+
+Topic: /velocity_smoother/transition_event
+  Type: lifecycle_msgs/msg/TransitionEvent
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /wait/_action/feedback
+  Type: nav2_msgs/action/Wait_FeedbackMessage
+  Publishers: 1
+  Subscribers: 2
+
+Topic: /wait/_action/status
+  Type: action_msgs/msg/GoalStatusArray
+  Publishers: 1
+  Subscribers: 2
+
+Topic: /waypoint_follower/transition_event
+  Type: lifecycle_msgs/msg/TransitionEvent
+  Publishers: 1
+  Subscribers: 0
+
+Topic: /world/empty/wrench
+  Type: ros_gz_interfaces/msg/EntityWrench
+  Publishers: 2
+  Subscribers: 1
+

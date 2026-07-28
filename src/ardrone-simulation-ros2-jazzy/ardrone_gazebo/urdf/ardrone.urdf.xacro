@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<robot name="ardrone_gazebo" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <!-- Base Link -->
+  <link name="base_link">
+  </link>
+
+  <!-- IMU Link -->
+  <link name="imu_link">
+  </link>
+  <joint name="imu_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="imu_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Front Camera Frame (Gazebo uses this name for frame_id) -->
+  <link name="ardrone_gazebo/base_link/front_camera">
+  </link>
+  <joint name="camera_optical_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="ardrone_gazebo/base_link/front_camera"/>
+    <origin xyz="0.2 0 0" rpy="-1.5707963267948966 0 -1.5707963267948966"/>
+  </joint>
+
+  <!-- Down Camera Link -->
+  <link name="down_camera_link">
+  </link>
+  <joint name="down_camera_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="down_camera_link"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0 1.570796326794897 0"/>
+  </joint>
+
+</robot>

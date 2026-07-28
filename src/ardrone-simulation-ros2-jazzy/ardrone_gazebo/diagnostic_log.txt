@@ -1,0 +1,757 @@
+Pipeline Diagnostics Started
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 0
+  /cmd_vel_nav (from ControllerServer): 0
+  /cmd_vel_smoothed (from VelocitySmoother): 0
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 0
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 0
+  /cmd_vel_nav (from ControllerServer): 0
+  /cmd_vel_smoothed (from VelocitySmoother): 0
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 0
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 199
+  /cmd_vel_nav (from ControllerServer): 15
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 138
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.007
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.007
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.015
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.014
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 195
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 195
+Last cmd_vel_nav values: lin.x=0.000, ang.z=0.000
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.038
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 199
+  /cmd_vel_nav (from ControllerServer): 18
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 199
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.067
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.066
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.095
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.094
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.120
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.119
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.130
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.131
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.111
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.112
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.085
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.086
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.059
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.060
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 199
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 199
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.033
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.034
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.024
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.023
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.051
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.050
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 13
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=-0.150, ang.z=0.000
+Last cmd_vel_smoothed values: lin.x=-0.150, ang.z=0.000
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 10
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=-0.150, ang.z=0.000
+Last cmd_vel_smoothed values: lin.x=-0.150, ang.z=0.000
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 10
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=-0.150, ang.z=0.000
+Last cmd_vel_smoothed values: lin.x=-0.150, ang.z=0.000
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 10
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 199
+Last cmd_vel_nav values: lin.x=-0.150, ang.z=0.000
+Last cmd_vel_smoothed values: lin.x=-0.150, ang.z=0.000
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 195
+  /cmd_vel_nav (from ControllerServer): 10
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 196
+Last cmd_vel_nav values: lin.x=-0.150, ang.z=0.000
+Last cmd_vel_smoothed values: lin.x=-0.150, ang.z=0.000
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 199
+  /cmd_vel_nav (from ControllerServer): 10
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 199
+Last cmd_vel_nav values: lin.x=-0.150, ang.z=0.000
+Last cmd_vel_smoothed values: lin.x=-0.150, ang.z=0.000
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 201
+  /cmd_vel_nav (from ControllerServer): 10
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 201
+Last cmd_vel_nav values: lin.x=-0.150, ang.z=0.000
+Last cmd_vel_smoothed values: lin.x=-0.150, ang.z=0.000
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 10
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=-0.150, ang.z=0.000
+Last cmd_vel_smoothed values: lin.x=-0.150, ang.z=0.000
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 10
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=-0.150, ang.z=0.000
+Last cmd_vel_smoothed values: lin.x=-0.150, ang.z=0.000
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 10
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=-0.150, ang.z=0.000
+Last cmd_vel_smoothed values: lin.x=-0.150, ang.z=0.000
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 196
+  /cmd_vel_nav (from ControllerServer): 15
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 196
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.248
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.249
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.238
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.238
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.230
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.230
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 199
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.215
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.216
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 199
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.179
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.181
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.140
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.142
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.103
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.105
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.066
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.068
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.038
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.039
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.038
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.038
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 195
+  /cmd_vel_nav (from ControllerServer): 21
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 195
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.042
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.042
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 199
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 199
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.048
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.047
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.055
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.054
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.071
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.069
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 199
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.104
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.102
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 201
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.140
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.138
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.174
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.172
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.206
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.204
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.240
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.239
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.400, ang.z=0.260
+Last cmd_vel_smoothed values: lin.x=0.400, ang.z=0.259
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 16
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.000, ang.z=1.000
+Last cmd_vel_smoothed values: lin.x=0.000, ang.z=1.000
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 10
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 199
+Last cmd_vel_nav values: lin.x=0.000, ang.z=1.000
+Last cmd_vel_smoothed values: lin.x=0.000, ang.z=1.000
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 199
+  /cmd_vel_nav (from ControllerServer): 10
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.000, ang.z=1.000
+Last cmd_vel_smoothed values: lin.x=0.000, ang.z=1.000
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 10
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.000, ang.z=1.000
+Last cmd_vel_smoothed values: lin.x=0.000, ang.z=1.000
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 10
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 199
+Last cmd_vel_nav values: lin.x=0.000, ang.z=1.000
+Last cmd_vel_smoothed values: lin.x=0.000, ang.z=1.000
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 10
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 201
+Last cmd_vel_nav values: lin.x=0.000, ang.z=1.000
+Last cmd_vel_smoothed values: lin.x=0.000, ang.z=1.000
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 10
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.000, ang.z=1.000
+Last cmd_vel_smoothed values: lin.x=0.000, ang.z=1.000
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 199
+  /cmd_vel_nav (from ControllerServer): 10
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 199
+Last cmd_vel_nav values: lin.x=0.000, ang.z=1.000
+Last cmd_vel_smoothed values: lin.x=0.000, ang.z=1.000
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 199
+  /cmd_vel_nav (from ControllerServer): 10
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 199
+Last cmd_vel_nav values: lin.x=0.000, ang.z=1.000
+Last cmd_vel_smoothed values: lin.x=0.000, ang.z=1.000
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 201
+  /cmd_vel_nav (from ControllerServer): 10
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 201
+Last cmd_vel_nav values: lin.x=0.000, ang.z=1.000
+Last cmd_vel_smoothed values: lin.x=0.000, ang.z=1.000
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 195
+  /cmd_vel_nav (from ControllerServer): 8
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 195
+Last cmd_vel_nav values: lin.x=0.000, ang.z=0.000
+Last cmd_vel_smoothed values: lin.x=0.000, ang.z=0.200
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 0
+  /cmd_vel_smoothed (from VelocitySmoother): 15
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.000, ang.z=0.000
+Last cmd_vel_smoothed values: lin.x=0.000, ang.z=0.000
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 0
+  /cmd_vel_smoothed (from VelocitySmoother): 0
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 199
+Last cmd_vel_nav values: lin.x=0.000, ang.z=0.000
+Last cmd_vel_smoothed values: lin.x=0.000, ang.z=0.000
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 194
+  /cmd_vel_nav (from ControllerServer): 0
+  /cmd_vel_smoothed (from VelocitySmoother): 0
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 195
+Last cmd_vel_nav values: lin.x=0.000, ang.z=0.000
+Last cmd_vel_smoothed values: lin.x=0.000, ang.z=0.000
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 0
+  /cmd_vel_smoothed (from VelocitySmoother): 0
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.000, ang.z=0.000
+Last cmd_vel_smoothed values: lin.x=0.000, ang.z=0.000
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 3
+  /cmd_vel_smoothed (from VelocitySmoother): 2
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.364, ang.z=0.444
+Last cmd_vel_smoothed values: lin.x=0.250, ang.z=0.320
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 199
+Last cmd_vel_nav values: lin.x=0.367, ang.z=0.444
+Last cmd_vel_smoothed values: lin.x=0.367, ang.z=0.444
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 199
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 199
+Last cmd_vel_nav values: lin.x=0.370, ang.z=0.444
+Last cmd_vel_smoothed values: lin.x=0.370, ang.z=0.444
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 199
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 199
+Last cmd_vel_nav values: lin.x=0.373, ang.z=0.444
+Last cmd_vel_smoothed values: lin.x=0.373, ang.z=0.444
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 201
+Last cmd_vel_nav values: lin.x=0.378, ang.z=0.444
+Last cmd_vel_smoothed values: lin.x=0.378, ang.z=0.444
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.382, ang.z=0.444
+Last cmd_vel_smoothed values: lin.x=0.382, ang.z=0.444
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.385, ang.z=0.444
+Last cmd_vel_smoothed values: lin.x=0.385, ang.z=0.444
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.390, ang.z=0.444
+Last cmd_vel_smoothed values: lin.x=0.390, ang.z=0.444
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.386, ang.z=0.444
+Last cmd_vel_smoothed values: lin.x=0.386, ang.z=0.444
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.363, ang.z=0.444
+Last cmd_vel_smoothed values: lin.x=0.364, ang.z=0.444
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 21
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.339, ang.z=0.444
+Last cmd_vel_smoothed values: lin.x=0.217, ang.z=0.284
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.318, ang.z=0.444
+Last cmd_vel_smoothed values: lin.x=0.319, ang.z=0.444
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.299, ang.z=0.444
+Last cmd_vel_smoothed values: lin.x=0.300, ang.z=0.444
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 199
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 199
+Last cmd_vel_nav values: lin.x=0.285, ang.z=0.444
+Last cmd_vel_smoothed values: lin.x=0.286, ang.z=0.444
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 201
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 201
+Last cmd_vel_nav values: lin.x=0.285, ang.z=0.444
+Last cmd_vel_smoothed values: lin.x=0.285, ang.z=0.444
+
+--- Pipeline Status ---
+Messages received in the last second:
+  /odom (from Gazebo): 200
+  /cmd_vel_nav (from ControllerServer): 20
+  /cmd_vel_smoothed (from VelocitySmoother): 20
+  /cmd_vel (from CollisionMonitor / final output): 0
+  /world/empty/wrench (from Driver): 200
+Last cmd_vel_nav values: lin.x=0.287, ang.z=0.444
+Last cmd_vel_smoothed values: lin.x=0.286, ang.z=0.444
+
