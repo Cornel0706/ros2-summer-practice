@@ -18,6 +18,9 @@ def generate_launch_description():
     existing_paths = os.environ.get('GZ_SIM_RESOURCE_PATH', '')
     os.environ['GZ_SIM_RESOURCE_PATH'] = (models_path + sep + existing_paths) if existing_paths else models_path
 
+    # Suppress verbose Gazebo wrench/entity debug output (cosmetic only)
+    os.environ['GZ_VERBOSE'] = '0'
+
     use_sim_time = LaunchConfiguration('use_sim_time')
     rviz = LaunchConfiguration('rviz')
     world = LaunchConfiguration('world_name')

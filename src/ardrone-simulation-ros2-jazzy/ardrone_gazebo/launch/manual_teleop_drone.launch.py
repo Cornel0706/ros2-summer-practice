@@ -16,6 +16,9 @@ def generate_launch_description():
     existing_paths = os.environ.get('GZ_SIM_RESOURCE_PATH', '')
     os.environ['GZ_SIM_RESOURCE_PATH'] = (models_path + sep + existing_paths) if existing_paths else models_path
 
+    # Suppress verbose Gazebo wrench/entity debug output (cosmetic only)
+    os.environ['GZ_VERBOSE'] = '0'
+
     sdf_file = os.path.join(pkg_ardrone_gazebo, 'models', 'ardrone_gazebo', 'ardrone_gazebo.sdf')
     urdf_file = os.path.join(pkg_ardrone_gazebo, 'urdf', 'ardrone.urdf.xacro')
 
@@ -40,7 +43,7 @@ def generate_launch_description():
         output='screen'
     )
 
-    # 3. Gazebo ROS Bridge
+    # 3. Gazebo ROS Bridge (camera topics match SDF: /drone1/camera/*)
     gz_bridge = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
@@ -50,10 +53,10 @@ def generate_launch_description():
             '/model/ardrone_gazebo/odometry@nav_msgs/msg/Odometry[gz.msgs.Odometry',
             '/world/empty/wrench@ros_gz_interfaces/msg/EntityWrench]gz.msgs.EntityWrench',
             '/model/ardrone_gazebo/link/base_link/sensor/sensor_imu/imu@sensor_msgs/msg/Imu[gz.msgs.IMU',
-            '/camera/image@sensor_msgs/msg/Image[gz.msgs.Image',
-            '/camera/depth_image@sensor_msgs/msg/Image[gz.msgs.Image',
-            '/camera/camera_info@sensor_msgs/msg/CameraInfo[gz.msgs.CameraInfo',
-            '/camera/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked',
+            '/drone1/camera/image@sensor_msgs/msg/Image[gz.msgs.Image',
+            '/drone1/camera/depth_image@sensor_msgs/msg/Image[gz.msgs.Image',
+            '/drone1/camera/camera_info@sensor_msgs/msg/CameraInfo[gz.msgs.CameraInfo',
+            '/drone1/camera/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked',
         ],
         remappings=[
             ('/model/ardrone_gazebo/odometry', '/odom_raw'),
@@ -68,8 +71,9 @@ def generate_launch_description():
         executable='ardrone_driver.py',
         name='ardrone_driver',
         output='screen',
+        parameters=[{'model_name': 'ardrone_gazebo'}],
         remappings=[
-            ('model/ardrone_gazebo/odometry', '/odom')
+            ('gz_odom', '/odom_raw')
         ]
     )
 
@@ -79,7 +83,11 @@ def generate_launch_description():
         executable='odom_tf_publisher.py',
         name='odom_tf_publisher',
         output='screen',
-        parameters=[{'use_sim_time': use_sim_time}]
+        parameters=[{'use_sim_time': use_sim_time}],
+        remappings=[
+            ('odom_raw', '/odom_raw'),
+            ('odom', '/odom')
+        ]
     )
 
     # 6. Robot State Publisher (Static TFs from URDF)
@@ -99,7 +107,20 @@ def generate_launch_description():
         package='ardrone_gazebo',
         executable='auto_takeoff.py',
         name='auto_takeoff',
-        output='screen'
+        output='screen',
+        remappings=[
+            ('odom', '/odom'),
+            ('ardrone/takeoff', '/ardrone/takeoff')
+        ]
+    )
+
+    # 7.5 Static TF map -> odom (Required for RTAB-Map/Nav2 initialization)
+    static_tf_node = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='static_tf_map_odom',
+        arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom'],
+        parameters=[{'use_sim_time': use_sim_time}]
     )
 
     # 8. Visual SLAM (RTAB-Map)
@@ -113,6 +134,9 @@ def generate_launch_description():
         'Grid/FromDepth': 'true',
         'Grid/RangeMax': '5.0',
         'Grid/RayTracing': 'true',
+        'Grid/MaxObstacleHeight': '2.0',
+        'Grid/MinGroundHeight': '0.04',
+        'Grid/CellSize': '0.05',
         'Reg/Force3DoF': 'true',
         'Optimizer/Slam2D': 'true',
         'RGBD/ProximityBySpace': 'false'
@@ -125,9 +149,9 @@ def generate_launch_description():
         output='screen',
         parameters=[rtabmap_parameters],
         remappings=[
-            ('rgb/image', '/camera/image'),
-            ('depth/image', '/camera/depth_image'),
-            ('rgb/camera_info', '/camera/camera_info'),
+            ('rgb/image', '/drone1/camera/image'),
+            ('depth/image', '/drone1/camera/depth_image'),
+            ('rgb/camera_info', '/drone1/camera/camera_info'),
             ('odom', '/odom')
         ],
         arguments=['--delete_db_on_start']
@@ -150,11 +174,11 @@ def generate_launch_description():
         package='rqt_image_view',
         executable='rqt_image_view',
         name='rqt_image_view',
-        arguments=['/camera/image'],
+        arguments=['/drone1/camera/image'],
         condition=IfCondition(rviz)
     )
 
-    # 11. Teleop Twist Keyboard (deschide un terminal nou)
+    # 11. Teleop Twist Keyboard (opens a new terminal window)
     teleop_node = Node(
         package='teleop_twist_keyboard',
         executable='teleop_twist_keyboard',
@@ -174,6 +198,7 @@ def generate_launch_description():
         odom_tf_node,
         robot_state_publisher,
         auto_takeoff,
+        static_tf_node,
         rtabmap_node,
         rviz_node,
         rqt_image_view_node,

@@ -18,6 +18,9 @@ def generate_launch_description():
     existing_paths = os.environ.get('GZ_SIM_RESOURCE_PATH', '')
     os.environ['GZ_SIM_RESOURCE_PATH'] = (models_path + sep + existing_paths) if existing_paths else models_path
 
+    # Suppress verbose Gazebo wrench/entity debug output (cosmetic only)
+    os.environ['GZ_VERBOSE'] = '0'
+
     sdf_file = os.path.join(pkg_ardrone_gazebo, 'models', 'ardrone_gazebo', 'ardrone_gazebo.sdf')
     urdf_file = os.path.join(pkg_ardrone_gazebo, 'urdf', 'ardrone.urdf.xacro')
 
@@ -74,7 +77,7 @@ def generate_launch_description():
         output='screen',
         parameters=[{'model_name': 'ardrone_gazebo'}],
         remappings=[
-            ('gz_odom', '/model/ardrone_gazebo/odometry')
+            ('gz_odom', '/odom_raw')
         ]
     )
 
@@ -113,6 +116,15 @@ def generate_launch_description():
             ('odom', '/odom'),
             ('ardrone/takeoff', '/ardrone/takeoff')
         ]
+    )
+
+    # 7.5 Static TF map -> odom (Required for Nav2 initialization before RTAB-Map publishes it)
+    static_tf_node = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='static_tf_map_odom',
+        arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom'],
+        parameters=[{'use_sim_time': use_sim_time}]
     )
 
     # 8. RTAB-Map Visual SLAM
@@ -214,6 +226,7 @@ def generate_launch_description():
         odom_tf_node,
         robot_state_publisher,
         auto_takeoff,
+        static_tf_node,
         rtabmap_node,
         nav2_launch,
         exploration_launch,

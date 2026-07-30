@@ -5,7 +5,7 @@ amcl:
     alpha3: 0.2
     alpha4: 0.2
     alpha5: 0.2
-    base_frame_id: base_link
+    base_frame_id: lino/base_footprint
     beam_skip_distance: 0.5
     beam_skip_error_threshold: 0.9
     beam_skip_threshold: 0.3
@@ -36,13 +36,13 @@ amcl:
     z_max: 0.05
     z_rand: 0.5
     z_short: 0.05
-    scan_topic: scan
+    scan_topic: /lino/scan
     use_sim_time: true
 bt_navigator:
   ros__parameters:
     global_frame: map
-    robot_base_frame: base_link
-    odom_topic: /odom
+    robot_base_frame: lino/base_footprint
+    odom_topic: odom
     bt_loop_duration: 10
     default_server_timeout: 20
     wait_for_service_timeout: 1000
@@ -83,22 +83,13 @@ controller_server:
       xy_goal_tolerance: 0.35
       yaw_goal_tolerance: 0.35
     FollowPath:
-      plugin: nav2_rotation_shim_controller::RotationShimController
-      primary_controller: nav2_regulated_pure_pursuit_controller::RegulatedPurePursuitController
-      angular_dist_threshold: 0.785
-      angular_disengage_threshold: 0.3925
-      forward_sampling_distance: 0.5
-      rotate_to_heading_angular_vel: 0.75
-      max_angular_accel: 3.2
-      simulate_ahead_time: 1.0
-      rotate_to_goal_heading: false
-      rotate_to_heading_once: true
-      use_path_orientations: false
+      plugin: nav2_regulated_pure_pursuit_controller::RegulatedPurePursuitController
       desired_linear_vel: 0.4
       lookahead_dist: 0.6
       min_lookahead_dist: 0.3
       max_lookahead_dist: 0.9
       lookahead_time: 1.5
+      rotate_to_heading_angular_vel: 0.75
       transform_tolerance: 0.1
       use_velocity_scaled_lookahead_dist: false
       min_approach_linear_velocity: 0.05
@@ -114,8 +105,8 @@ controller_server:
       use_rotate_to_heading: true
       allow_reversing: false
       rotate_to_heading_min_angle: 0.785
+      max_angular_accel: 3.2
       max_robot_pose_search_dist: 10.0
-      stateful: true
     use_sim_time: true
 local_costmap:
   local_costmap:
@@ -123,25 +114,27 @@ local_costmap:
       update_frequency: 5.0
       publish_frequency: 2.0
       global_frame: odom
-      robot_base_frame: base_link
+      robot_base_frame: lino/base_footprint
+      transform_tolerance: 5.0
       rolling_window: true
       width: 3
       height: 3
       resolution: 0.05
-      robot_radius: 0.35
+      robot_radius: 0.18
+      always_send_full_costmap: true
       plugins:
       - obstacle_layer
       - inflation_layer
       inflation_layer:
         plugin: nav2_costmap_2d::InflationLayer
         cost_scaling_factor: 3.0
-        inflation_radius: 0.7
+        inflation_radius: 0.35
       obstacle_layer:
         plugin: nav2_costmap_2d::ObstacleLayer
         enabled: true
-        observation_sources: pointcloud
+        observation_sources: pointcloud scan
         pointcloud:
-          topic: /camera/points
+          topic: /lino/camera/depth/color/points
           max_obstacle_height: 2.0
           clearing: true
           marking: true
@@ -150,10 +143,19 @@ local_costmap:
           raytrace_min_range: 0.0
           obstacle_max_range: 2.5
           obstacle_min_range: 0.0
+        scan:
+          topic: /lino/scan
+          max_obstacle_height: 2.0
+          clearing: true
+          marking: true
+          data_type: LaserScan
+          raytrace_max_range: 3.0
+          raytrace_min_range: 0.0
+          obstacle_max_range: 2.5
+          obstacle_min_range: 0.0
       static_layer:
         plugin: nav2_costmap_2d::StaticLayer
         map_subscribe_transient_local: true
-      always_send_full_costmap: true
       use_sim_time: true
 global_costmap:
   global_costmap:
@@ -161,8 +163,9 @@ global_costmap:
       update_frequency: 1.0
       publish_frequency: 1.0
       global_frame: map
-      robot_base_frame: base_link
-      robot_radius: 0.35
+      robot_base_frame: lino/base_footprint
+      transform_tolerance: 5.0
+      robot_radius: 0.18
       resolution: 0.05
       track_unknown_space: true
       plugins:
@@ -172,9 +175,9 @@ global_costmap:
       obstacle_layer:
         plugin: nav2_costmap_2d::ObstacleLayer
         enabled: true
-        observation_sources: pointcloud
+        observation_sources: pointcloud scan
         pointcloud:
-          topic: /camera/points
+          topic: /lino/camera/depth/color/points
           max_obstacle_height: 2.0
           clearing: true
           marking: true
@@ -183,13 +186,24 @@ global_costmap:
           raytrace_min_range: 0.0
           obstacle_max_range: 2.5
           obstacle_min_range: 0.0
+        scan:
+          topic: /lino/scan
+          max_obstacle_height: 2.0
+          clearing: true
+          marking: true
+          data_type: LaserScan
+          raytrace_max_range: 3.0
+          raytrace_min_range: 0.0
+          obstacle_max_range: 2.5
+          obstacle_min_range: 0.0
       static_layer:
         plugin: nav2_costmap_2d::StaticLayer
+        map_topic: /map
         map_subscribe_transient_local: true
       inflation_layer:
         plugin: nav2_costmap_2d::InflationLayer
         cost_scaling_factor: 3.0
-        inflation_radius: 0.7
+        inflation_radius: 0.35
       always_send_full_costmap: true
       use_sim_time: true
 map_saver:
@@ -222,8 +236,8 @@ smoother_server:
     use_sim_time: true
 behavior_server:
   ros__parameters:
-    local_costmap_topic: local_costmap/costmap_raw
-    global_costmap_topic: global_costmap/costmap_raw
+    local_costmap_topic: local_costmap/costmap
+    global_costmap_topic: global_costmap/costmap
     local_footprint_topic: local_costmap/published_footprint
     global_footprint_topic: global_costmap/published_footprint
     cycle_frequency: 10.0
@@ -245,7 +259,7 @@ behavior_server:
       plugin: nav2_behaviors::AssistedTeleop
     local_frame: odom
     global_frame: map
-    robot_base_frame: base_link
+    robot_base_frame: lino/base_footprint
     transform_tolerance: 0.1
     simulate_ahead_time: 2.0
     max_rotational_vel: 1.0
@@ -294,7 +308,7 @@ velocity_smoother:
     use_sim_time: true
 collision_monitor:
   ros__parameters:
-    base_frame_id: base_link
+    base_frame_id: lino/base_footprint
     odom_frame_id: odom
     cmd_vel_in_topic: cmd_vel_smoothed
     cmd_vel_out_topic: cmd_vel
@@ -318,7 +332,7 @@ collision_monitor:
     - scan
     scan:
       type: scan
-      topic: scan
+      topic: /lino/scan
       min_height: 0.15
       max_height: 2.0
       enabled: false
@@ -332,7 +346,7 @@ docking_server:
     undock_linear_tolerance: 0.05
     undock_angular_tolerance: 0.1
     max_retries: 3
-    base_frame: base_link
+    base_frame: lino/base_footprint
     fixed_frame: odom
     dock_backwards: false
     dock_prestaging_tolerance: 0.5
@@ -358,7 +372,7 @@ docking_server:
       v_linear_min: 0.15
       v_linear_max: 0.15
       use_collision_detection: true
-      costmap_topic: local_costmap/costmap_raw
+      costmap_topic: local_costmap/costmap
       footprint_topic: local_costmap/published_footprint
       transform_tolerance: 0.1
       projection_time: 5.0
@@ -367,7 +381,7 @@ docking_server:
     use_sim_time: true
 loopback_simulator:
   ros__parameters:
-    base_frame_id: base_link
+    base_frame_id: lino/base_footprint
     odom_frame_id: odom
     map_frame_id: map
     scan_frame_id: base_scan

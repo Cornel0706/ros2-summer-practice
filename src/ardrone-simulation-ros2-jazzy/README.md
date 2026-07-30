@@ -78,3 +78,24 @@ This mode launches the drone in a custom depot environment, builds a 2D map usin
 
 2. **Wait for Auto-Takeoff**:
    The drone will take off automatically after 8 seconds of initialization. After that, you can control the drone using TELEOP.
+
+## Heterogeneous Multi-Robot Autonomous Visual SLAM & Exploration (Drone + Ground Robot)
+
+This mode launches an aerial drone (`drone1`) and a ground robot (`lino`) simultaneously in the depot environment. Both robots use onboard 3D RGB-D depth cameras to build individual SLAM maps via RTAB-Map, which are merged in real-time into a unified global map `/map`. MRTSP and Nav2 collaboratively navigate both robots.
+
+1. **Launch the autonomous drone + ground robot system**:
+   ```bash
+   ros2 launch ardrone_gazebo drone_robot_slam.launch.py
+   ```
+   *Note: Automatically spawns both robots, initializes SLAM, opens RViz2 with the merged map, and starts collaborative frontier exploration after a 10-second stabilization delay.*
+
+## Heterogeneous Multi-Robot Manual SLAM & Exploration (Drone + Ground Robot)
+
+This mode launches both the drone and ground robot with real-time RGB-D Visual SLAM and shared map merging, while opening automated interactive teleop terminals to manually control both robots.
+
+1. **Launch the manual drone + ground robot system**:
+   ```bash
+   ros2 launch ardrone_gazebo manual_drone_robot_slam.launch.py
+   ```
+   *Note: Automatically spawns both robots in `tugbot_depot.sdf`, opens RViz2 with the shared map, and launches two popup terminal windows for keyboard teleop (`teleop_drone1` for aerial controls and `teleop_lino` for ground drive).*
+
