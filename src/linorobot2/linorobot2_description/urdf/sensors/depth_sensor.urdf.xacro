@@ -45,6 +45,9 @@
       <child link="camera_link"/>
       <xacro:insert_block name="origin" />
     </joint>
+    <gazebo reference="camera_to_base_link">
+      <disableFixedJointLumping>true</disableFixedJointLumping>
+    </gazebo>
 
     <link name="camera_depth_link"/>
     <joint name="camera_depth_joint" type="fixed">
@@ -52,6 +55,9 @@
       <parent link="camera_link"/>
       <child link="camera_depth_link"/>
     </joint>
+    <gazebo reference="camera_depth_joint">
+      <disableFixedJointLumping>true</disableFixedJointLumping>
+    </gazebo>
 
     <link name="camera_depth_optical_frame"/>
     <joint name="camera_depth_optical_joint" type="fixed">
@@ -59,15 +65,18 @@
       <parent link="camera_depth_link"/>
       <child link="camera_depth_optical_frame"/>
     </joint>
+    <gazebo reference="camera_depth_optical_joint">
+      <disableFixedJointLumping>true</disableFixedJointLumping>
+    </gazebo>
 
     <gazebo reference="camera_link">
       <sensor name="camera" type="rgbd_camera">
-        <topic>/camera</topic>
+        <topic>/lino/camera</topic>
         <update_rate>30.0</update_rate>
         <always_on>true</always_on>
         <visualize>true</visualize>
         <camera>
-          <optical_frame_id>camera_depth_optical_frame</optical_frame_id>
+          <optical_frame_id>lino/camera_depth_optical_frame</optical_frame_id>
           <horizontal_fov>1.50098</horizontal_fov>
           <image>
             <width>640</width>

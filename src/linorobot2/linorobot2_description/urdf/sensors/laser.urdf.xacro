@@ -43,11 +43,14 @@
       <child link="${frame_id}"/>
       <xacro:insert_block name="origin" />
     </joint>
+    <gazebo reference="${frame_id}_to_base_link">
+      <disableFixedJointLumping>true</disableFixedJointLumping>
+    </gazebo>
 
     <gazebo reference="${frame_id}">
       <sensor name="gpu_lidar" type="gpu_lidar">
-        <topic>${topic_name}</topic>
-        <gz_frame_id>${frame_id}</gz_frame_id>
+        <topic>/lino/${topic_name}</topic>
+        <gz_frame_id>lino/${frame_id}</gz_frame_id>
         <update_rate>${update_rate}</update_rate>
         <always_on>true</always_on>
         <visualize>true</visualize>

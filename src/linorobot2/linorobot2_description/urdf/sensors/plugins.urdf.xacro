@@ -1,4 +1,5 @@
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <!-- 
   <gazebo>
     <plugin
       filename="gz-sim-sensors-system"
@@ -6,5 +7,5 @@
       <render_engine>ogre2</render_engine>
     </plugin>
   </gazebo>
-
+  -->
 </robot>

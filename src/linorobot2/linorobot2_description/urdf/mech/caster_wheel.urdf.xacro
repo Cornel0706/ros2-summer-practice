@@ -38,8 +38,14 @@
     </link>
 
     <gazebo reference="${side}_caster_wheel_link">
-        <mu1>0.01</mu1>
-        <mu2>0.01</mu2>
+      <surface>
+        <friction>
+          <ode>
+            <mu>0.001</mu>
+            <mu2>0.001</mu2>
+          </ode>
+        </friction>
+      </surface>
     </gazebo>
 
     <joint name="${side}_caster_wheel_joint" type="fixed">
